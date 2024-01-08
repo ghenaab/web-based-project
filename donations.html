@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  
+  
+  header {
+    background-color: #6B7476;; 
+    color: #fff;
+    padding: 30px;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 16px;
+  }
+  body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(131, 131, 131) ;}
+
+    #donations{
+    max-width: 700px;
+    margin: auto ;
+    padding: 50px;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    align: "center";
+  }
+
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="logo_pal.jpg"width="250"height="130">
+        </div>
+        <h1>Donations</h1>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="Merch.html">Services</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+
+           
+            
+        </ul>
+</nav>
+</header>
+ 
+    
+    
+    <div class="donation-container">
+        
+        <div class="donationBox">
+            <h1 align="center" style="background-color:rgb(0,0,0,0.0)">Donation form </h1>
+            <h2 align="center">To donate please fill in the form with the requested details.</h2>
+            <h2 align="center">We would like to assure you that your money is in safe hands with us & happly THANK YOU for trusting us with it!</h2>
+
+            <table id="donations">
+                <tr>
+                    <td class="test">Select prefered amount: :</td>
+                    <td>
+                        <form>
+                            <label  class="donationLabel" for="option1"><input type="radio" name="donationAmount" value="25" class="radioDonation">$10 </label>
+                            <label class="donationLabel" for="option2"><input type="radio" name="donationAmount" value="50" class="radioDonation">$50</label>
+                            <label class="donationLabel" for="option3"><input type="radio" name="donationAmount" value="100" class="radioDonation">$100</label>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td><br><label class="donationLabel"><input class="radioDonation" id="otherDonation" type="radio" name="donationAmount" value="other" checked > Would you prefer a diff amount? </td>
+                    <td><br>
+                     
+                      
+                        
+                       
+                        <label class="otherLabel"><input type="text" id="donationOther"></label></td>
+                
+                    </form>
+                </tr>
+                <br>
+            
+                <tr>
+                    <br>
+                    <td>Cardholder Name </td>
+                    <td><input class="donation-text" type="Text"></td>
+                </tr>
+                <td>Card Number </td>
+                <td><input type="text" class="card-number"></td>
+
+                <tr>
+                    <td>Expiry Date <input type="text" class="expiry-date"></td>
+                    <td>CVV <input type="text" class="cvv"></td>
+                </tr>
+                <tr>
+                    <td ><input type="submit" class="donationSubmit" value="Submit"></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+</html>

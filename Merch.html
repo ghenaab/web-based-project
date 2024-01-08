@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link rel="stylesheet" href="stylesMerch.css">
+<style>
+  table{
+	border-collapse:separate;
+	border-spacing:10px;
+	margin:auto;
+    margin-top: 10px;
+	border-width:5px;
+    align-content: center;
+    background-color: rgb(254, 253, 253);
+   
+}
+td{
+	padding:10px;
+	margin:20px;
+}
+td:hover{
+background-color:#9FB7B0;
+}
+ 
+  </style>
+</head>
+<body>
+    <h1>Date and Time: <span id="dateTime"></span></h1>
+    <header>
+        <div class="logo">
+        <img src="logo_pal.jpg" width="250"height="130">
+        </div>
+        <h1>Merchandise & Donations</h1>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="Merch.html">Services</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+
+           
+            
+        </ul>
+</nav>
+</header>
+
+<h2 align="center">We are happy to inform you that you can now donate money through our website help out our brothers & sisters in Palestine, or you can also purchase from our online merchandise store where 100% of our profits will be donated to Palestine!</h2>
+
+    <div class="Donate"style="border: solid;">
+    <h2 >Would you like to donate money to help & support Palestine?
+        <a href="donations.html">
+     <button  class="Donate-button">Donate here!</button></a>
+    </h2>
+    </div>
+<table border="1">
+<div class="product-details">
+<tr>
+<td> <div class="image-container">
+
+<img src="T-shirt1.jpg" alt="T-shirt 1" width="285" height="285">
+</div>
+ 
+    <div class="product-info">
+<h3>Black Palestine T-shirt - $25</h3>
+<p></p>
+ 
+
+<div class="add-to-cart-section">
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1">
+<a href="cart.html">
+    <button onclick="addToCart('Black Palestine T-shirt', 25)">Add to Cart</button>
+</a>
+</div>
+</div>
+</td>
+<td>
+<div class="image-container">
+
+<img src="Tote-bag1.jpg" alt="Tote-bag 1" width="285" height="285" >
+</div>
+ 
+    <div class="product-info">
+<h3>TOTE BAG - $18</h3>
+
+      
+<div class="add-to-cart-section">
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1">
+<a href="cart.html">
+<button class="add-to-cart-button">Add to Cart</button>
+</a>
+</div>
+</div>
+</td>
+<td>
+    <div class="image-container">
+    
+    <img src="Hat1.jpg" alt="Hat 1" width="285" height="285" >
+    </div>
+     
+        <div class="product-info">
+    <h3> HAT - $8</h3>
+    
+     
+
+    <div class="add-to-cart-section">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <a href="cart.html">
+    <button class="add-to-cart-button">Add to Cart</button>
+    </a>
+    </div>
+    </div>
+    </td>
+
+
+   
+
+
+
+
+<td>
+<div class="image-container">
+
+<img src="Phonecase2.jpg" alt="Phonecase2" width="285" height="285" >
+</div>
+
+ 
+    <div class="product-info">
+<h3>PHONECASE - $8</h3>
+
+ 
+<div class="add-to-cart-section">
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1">
+<a href="cart.html">
+<button class="add-to-cart-button">Add to Cart</button>
+</a>
+</div>
+</div>
+</td>
+</tr>
+</div>
+
+<div class="product-details">
+<tr>
+<td> <div class="image-container">
+
+<img src="T-shirt2.jpg" alt="T-shirt 2" width="285" height="285">
+</div>
+ 
+    <div class="product-info">
+<h3>White Palestinian T-shirt - $30</h3>
+
+<div class="add-to-cart-section">
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1">
+<a href="cart.html">
+<button class="add-to-cart-button">Add to Cart</button>
+</a>
+</div>
+</div>
+</td>
+
+<td>
+    <div class="image-container">
+    
+    <img src="Tote-bag2.JPG" alt="Black Tote-bag 2" width="285" height="285" >
+    </div>
+     
+        <div class="product-info">
+    <h3>BLACK TOTE BAG - $18</h3>
+  
+    <div class="add-to-cart-section">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <a href="cart.html">
+    <button class="add-to-cart-button">Add to Cart</button>
+    </a>
+    </div>
+    </div>
+    </td>
+
+
+
+
+<td>
+<div class="image-container">
+
+<img src="Hat2.jpg" alt="Hat 2" width="285" height="285" >
+</div>
+ 
+    <div class="product-info">
+<h3>HAT - $8</h3>
+
+<div class="add-to-cart-section">
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1">
+<a href="cart.html">
+<button class="add-to-cart-button">Add to Cart</button>
+
+</a>
+</div>
+</div>
+</td>
+<td>
+<div class="image-container">
+
+<img src="Phonecase1.jpg" alt="PHONECASE 1" width="285" height="285" >
+</div>
+
+ 
+    <div class="product-info">
+<h3>PHONECASE - $8</h3>
+
+<div class="add-to-cart-section">
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1">
+<a href="cart.html">
+    <button class="add-to-cart-button">Add to Cart</button> 
+   
+</a>
+</div>
+</div>
+</td>
+</tr>
+</div>
+
+
+
+
+
+</table>
+<script>
+    function addToCart(productName, price) {
+        const quantity = document.getElementById(`quantity${productName}`).value;
+        const item = `${productName} - $${price} x ${quantity}`;
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        cartItems.push(item);
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+        alert('Item added to cart!');
+    }
+
+    function checkout() {
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        let totalPrice = 0;
+        cartItems.forEach(item => {
+            const itemDetails = item.split(' - ');
+            const price = parseInt(itemDetails[1].split(' $')[1]) * parseInt(itemDetails[2].split(' x ')[1]);
+            totalPrice += price;
+        });
+        const discountCode = prompt('Enter discount code:');
+        if (discountCode === 'YOURDISCOUNTCODE') {
+            totalPrice *= 0.8; // Apply 20% discount if the code matches
+        } else {
+            alert('Discount code not available!');
+        }
+        alert(`Total Price: $${totalPrice}`);
+    }
+    function updateDateTime() {
+            const dateTimeElement = document.getElementById('dateTime');
+            const now = new Date();
+            const formattedDateTime = now.toLocaleString();
+            dateTimeElement.textContent = formattedDateTime;
+        }
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="stylesMerch.css">
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div id="cartItems">
+        <!-- Display items added to the cart -->
+    </div>
+    <div id="discountCode">
+        <label for="discount">Discount Code:</label>
+        <input type="text" id="discount" name="discount">
+        <button onclick="applyDiscount()">Apply</button>
+    </div>
+    <div id="total">
+        <!-- Display total amount -->
+    </div>
+
+    <script>
+        // Function to apply discount code
+        function applyDiscount() {
+            const discountCode = document.getElementById('discount').value;
+            // Your code to validate and apply discount
+            // Example: Check if the entered code is valid, calculate discounted price
+        }
+        
+        // Retrieve cart items from local storage
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Display items in the cart
+        const cartContainer = document.getElementById('cartItems');
+        cartItems.forEach(item => {
+            cartContainer.innerHTML += `<div>${item}</div>`;
+        });
+
+        // Calculate and display total amount
+        const totalPrice = calculateTotal(cartItems); // Your function to calculate total price
+        document.getElementById('total').innerText = `Total: $${totalPrice}`;
+
+        function calculateTotal(items) {
+            // Your logic to calculate the total price based on items in the cart
+        }
+    </script>
+</body>
+</html>
